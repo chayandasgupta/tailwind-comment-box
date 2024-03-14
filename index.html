@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post comment</title>
+  <title>Post comment component</title>
 
   <link rel="stylesheet" href="css/style.css">
   <!-- Font Awesome -->
@@ -12,174 +12,161 @@
 </head>
 
 <body>
-  <section class="bg-gray-100 py-8 lg:py-16 antialiased">
+  <section class="bg-gray-100 py-8 lg:py-16">
     <div class="max-w-3xl mx-auto px-4">
-      <article class="p-6 text-base bg-white rounded-lg shadow-md mb-5">
-        <!-- flex box -->
-        <div class="flex justify-between mb-2">
-          <!-- left -->
-          <div class="mr-6 md:mr-0">
-            <div
-              class="flex justify-center items-center flex-col font-semibold rounded-lg w-10 bg-gray-200 bg-opacity-50">
-              <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-t-lg">+</button>
-              <span class="text-lg text-primary font-mono pt-2 pb-1">12</span>
-              <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-b-lg">-</button>
+      <!-- single comment -->
+      <article class="card">
+        <div class="flex">
+
+          <div class="mr-5">
+            <div class="row-flex justify-center flex-col font-semibold rounded-xl w-9 bg-gray-200 bg-opacity-50">
+              <button class="operatebtn rounded-t-lg">+</button>
+              <span class="operatebtn-digit">12</span>
+              <button class="operatebtn rounded-b-lg">-</button>
             </div>
           </div>
           <!-- right -->
           <div class="w-full md:w-auto">
-            <header class="flex items-center justify-between flex-wrap mb-3 space-y-2 md:space-y-0">
-              <div class="flex items-center flex-wrap w-full lg:w-auto">
-                <a href="#" class="flex items-center">
-                  <img src="/user1.jpg" alt="user1" class="rounded-full w-8 h-8 mr-3">
-                  <strong class="text-gray-600">tailor</strong>
-                </a>
-                <time class="text-gray-500 font-semibold font-mono [word-spacing:-5px] mt-1 ml-3">1 month ago</time>
+            <header class="row-flex justify-between mb-3 space-y-2 md:space-y-0">
+              <div class="row-flex flex-wrap w-full lg:w-auto">
+                <img src="/user1.jpg" alt="user1" class="card-img">
+                <p class="flex flex-col lg:flex-row">
+                  <strong class="text-gray-600 mr-3">tailor</strong>
+                  <time class="text-gray-500 font-semibold font-mono lg:mt-[2px] [word-spacing:-5px]">1 month ago</time>
+                </p>
               </div>
-              <!-- reply button -->
-              <div class="flex items-center w-full lg:w-auto lg:mt-0">
-                <a href="#" class="flex justify-center items-center space-x-2 text-primary font-semibold">
-                  <i class="fa fa-reply text-sm block pt-1"></i>
-                  <span>Reply</span>
-                </a>
-              </div>
+
+              <p class="text-primary font-semibold">
+                <i class="fa fa-reply text-sm block pt-1"></i>
+                <span class="hidden lg:inline pl-1">Reply</span>
+              </p>
             </header>
 
-            <p class="font-normal text-gray-800">
-              <span class="text-base">
-                Lorem ipsum dolor sit amet consectetur,
-                adipisicing
-                elit.
-                Consectetur, cupiditate aut earum repellat vel
-                tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
-                expedita ea, iure voluptas.
-              </span>
+            <p class="font-normal text-sm lg:text-base text-gray-800">
+              Lorem ipsum dolor sit amet consectetur,
+              adipisicing
+              elit.
+              Consectetur, cupiditate aut earum repellat vel
+              tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
+              expedita ea, iure voluptas.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- single comment -->
+      <article class="card">
+        <div class="flex">
+          <div class="mr-5">
+            <div class="row-flex justify-center flex-col font-semibold rounded-xl w-9 bg-gray-200 bg-opacity-50">
+              <button class="operatebtn rounded-t-lg">+</button>
+              <span class="operatebtn-digit">5</span>
+              <button class="operatebtn rounded-b-lg">-</button>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <header class="row-flex justify-between  mb-3 space-y-2 md:space-y-0">
+              <div class="row-flex flex-wrap w-full lg:w-auto">
+                <img src="/user1.jpg" alt="user1" class="card-img">
+                <p class="flex flex-col lg:flex-row">
+                  <strong class="text-gray-600 mr-3">tailor</strong>
+                  <time class="text-gray-500 font-semibold font-mono lg:mt-[2px] [word-spacing:-5px]">1 month ago</time>
+                </p>
+              </div>
+              <!-- reply button -->
+              <p class="text-primary font-semibold">
+                <i class="fa fa-reply text-sm block pt-1"></i>
+                <span class="hidden lg:inline pl-1">Reply</span>
+              </p>
+            </header>
+
+
+            <p class="font-normal text-sm lg:text-base text-gray-800">
+              Lorem ipsum dolor sit amet consectetur,
+              adipisicing
+              elit.
+              Consectetur, cupiditate aut earum repellat vel
+              tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
+              expedita ea, iure voluptas.
             </p>
           </div>
 
         </div>
 
       </article>
-      <article class="p-6 text-base bg-white rounded-lg shadow-md mb-5">
-        <!-- flex box -->
-        <div class="flex justify-between mb-2">
-          <!-- left -->
-          <div class="mr-6 md:mr-0">
-            <div
-              class="flex justify-center items-center flex-col font-semibold rounded-lg w-10 bg-gray-200 bg-opacity-50">
-              <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-t-lg">+</button>
-              <span class="text-lg text-primary font-mono pt-2 pb-1">12</span>
-              <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-b-lg">-</button>
-            </div>
-          </div>
-          <!-- right -->
-          <div class="w-full md:w-auto">
-            <header class="flex items-center justify-between flex-wrap mb-3 space-y-2 md:space-y-0">
-              <div class="flex items-center flex-wrap w-full lg:w-auto">
-                <a href="#" class="flex items-center">
-                  <img src="/user1.jpg" alt="user1" class="rounded-full w-8 h-8 mr-3">
-                  <strong class="text-gray-600">tailor</strong>
-                </a>
-                <time class="text-gray-500 font-semibold font-mono [word-spacing:-5px] mt-1 ml-3">1 month ago</time>
-              </div>
-              <!-- reply button -->
-              <div class="flex items-center w-full lg:w-auto lg:mt-0">
-                <a href="#" class="flex justify-center items-center space-x-2 text-primary font-semibold">
-                  <i class="fa fa-reply text-sm block pt-1"></i>
-                  <span>Reply</span>
-                </a>
-              </div>
-            </header>
 
-            <p class="font-normal text-gray-800">
-              <span class="text-base">
-                Lorem ipsum dolor sit amet consectetur,
-                adipisicing
-                elit.
-                Consectetur, cupiditate aut earum repellat vel
-                tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
-                expedita ea, iure voluptas.
-              </span>
-            </p>
-          </div>
-
-        </div>
-
-      </article>
+      <!-- comment reply -->
       <div class="border-l-2 border-l-gray-300 pl-4 ml-4 lg:pl-10 lg:ml-10 ">
-        <article class="p-6 text-base bg-white rounded-lg shadow-md mb-5">
-          <!-- flex box -->
-          <div class="flex justify-between mb-2">
-            <!-- left -->
-            <div class="mr-6 md:mr-0">
-              <div
-                class="flex justify-center items-center flex-col font-semibold rounded-lg w-10 bg-gray-200 bg-opacity-50">
-                <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-t-lg">+</button>
-                <span class="text-lg text-primary font-mono pt-2 pb-1">12</span>
-                <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-b-lg">-</button>
+        <!-- single comment reply -->
+        <article class="card">
+          <div class="flex">
+            <div class="mr-5">
+              <div class="row-flex justify-center flex-col font-semibold rounded-xl w-9 bg-gray-200 bg-opacity-50">
+                <button class="operatebtn rounded-t-lg">+</button>
+                <span class="operatebtn-digit">15</span>
+                <button class="operatebtn rounded-b-lg">-</button>
               </div>
             </div>
             <!-- right -->
             <div class="w-full md:w-auto">
-              <header class="flex items-center justify-between flex-wrap mb-3 space-y-2 md:space-y-0">
-                <div class="flex items-center flex-wrap w-full lg:w-auto">
-                  <a href="#" class="flex items-center">
-                    <img src="/user1.jpg" alt="user1" class="rounded-full w-8 h-8 mr-3">
-                    <strong class="text-gray-600">tailor</strong>
-                  </a>
-                  <time class="text-gray-500 font-semibold font-mono [word-spacing:-5px] mt-1 ml-3">1 month ago</time>
+              <header class="row-flex justify-between  mb-3 space-y-2 md:space-y-0">
+                <div class="row-flex flex-wrap w-full lg:w-auto">
+                  <img src="/user2.jpg" alt="user1" class="card-img">
+                  <p class="flex flex-col lg:flex-row">
+                    <strong class="text-gray-600 mr-3">kopik</strong>
+                    <time class="text-gray-500 font-semibold font-mono lg:mt-[2px] [word-spacing:-5px]">1 month
+                      ago</time>
+                  </p>
                 </div>
                 <!-- reply button -->
-                <div class="flex items-center w-full lg:w-auto lg:mt-0">
-                  <a href="#" class="flex justify-center items-center space-x-2 text-primary font-semibold">
-                    <i class="fa fa-reply text-sm block pt-1"></i>
-                    <span>Reply</span>
-                  </a>
-                </div>
+                <p class="text-primary font-semibold">
+                  <i class="fa fa-reply text-sm block pt-1"></i>
+                  <span class="hidden lg:inline pl-1">Reply</span>
+                </p>
               </header>
 
-              <p class="font-normal text-gray-800">
-                <span class="text-base">
-                  Lorem ipsum dolor sit amet consectetur,
-                  adipisicing
-                  elit.
-                  Consectetur, cupiditate aut earum repellat vel
-                  tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
-                  expedita ea, iure voluptas.
-                </span>
+              <p class="font-normal text-sm lg:text-base text-gray-800">
+                <a href="#" class="font-bold text-primary opacity-80">@maxblagan</a>
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing
+                elit.
+                Consectetur, cupiditate aut earum repellat vel
+                tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
+                expedita ea, iure voluptas.
               </p>
             </div>
-
           </div>
-
         </article>
-        <article class="p-6 text-base bg-white rounded-lg shadow-md mb-5">
-          <!-- flex box -->
-          <div class="flex justify-between mb-2">
-            <!-- left -->
-            <div class="mr-6">
-              <div
-                class="flex justify-center items-center flex-col font-semibold rounded-lg w-10 bg-gray-200 bg-opacity-50">
-                <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-t-lg">+</button>
-                <span class="text-lg text-primary font-mono pt-2 pb-1">2</span>
-                <button class="text-2xl font-bold text-gray-400 w-full hover:bg-gray-200 rounded-b-lg">-</button>
+
+        <!-- single comment reply -->
+        <article class="card">
+          <div class="flex">
+            <div class="mr-5">
+              <div class="row-flex justify-center flex-col font-semibold rounded-xl w-9 bg-gray-200 bg-opacity-50">
+                <button class="operatebtn rounded-t-lg">+</button>
+                <span class="operatebtn-digit">3</span>
+                <button class="operatebtn rounded-b-lg">-</button>
               </div>
             </div>
-            <!-- right -->
-            <div class="w-full">
-              <header class="flex justify-between items-center w-full mb-3">
-                <div class="flex items-center">
-                  <a href="#" class="flex items-center">
-                    <img src="/user1.jpg" alt="user1" class="rounded-full w-8 h-8 mr-3">
-                    <strong class="text-gray-600 mr-2">chayan</strong>
-                    <p class="bg-primary bg-opacity-80 rounded-sm text-white inline-block leading-[19px] mt-1">
-                      <span class="relative bottom-[3px] px-2 text-xs font-bold">you</span>
-                    </p>
-                  </a>
-                  <time class="text-gray-500 font-semibold font-mono [word-spacing:-5px] mt-1 ml-3">2 days ago</time>
+
+            <div class="w-full md:w-auto">
+              <header class="row-flex flex-wrap justify-between  mb-3 space-y-4 md:space-y-0">
+                <div class="row-flex flex-wrap w-full lg:w-auto">
+                  <img src="/user1.jpg" alt="user1" class="card-img">
+                  <div class="flex flex-col lg:flex-row">
+                    <div class=" mr-3">
+                      <strong class="text-gray-600">chayan</strong>
+                      <p class="bg-primary bg-opacity-80 rounded-sm text-white inline-block leading-[19px] mt-1">
+                        <span class="relative bottom-[3px] px-2 text-xs font-bold">you</span>
+                      </p>
+                    </div>
+                    <time class="text-gray-500 font-semibold font-mono lg:mt-[2px] [word-spacing:-5px]">1 month
+                      ago</time>
+                  </div>
                 </div>
+
                 <!-- reply button -->
-                <div class="flex items-center space-x-8 text-md">
+                <div class="row-flex space-x-8 text-md">
                   <a href="#" class="flex justify-center items-center space-x-2 text-red-600 font-semibold">
                     <i class="fa fa-trash text-sm block pt-1"></i>
                     <span>Delete</span>
@@ -190,16 +177,14 @@
                   </a>
                 </div>
               </header>
-              <p class="font-normal text-gray-800 ">
+              <p class="font-normal text-sm lg:text-base text-gray-800">
                 <a href="#" class="font-bold text-primary opacity-80">@ramsesmiron</a>
-                <span class="text-base">
-                  Lorem ipsum dolor sit amet consectetur,
-                  adipisicing
-                  elit.
-                  Consectetur, cupiditate aut earum repellat vel
-                  tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
-                  expedita ea, iure voluptas.
-                </span>
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing
+                elit.
+                Consectetur, cupiditate aut earum repellat vel
+                tempore doloremque dignissimos culpa quo. Corporis ratione explicabo maxime? Quidem quisquam rerum
+                expedita ea, iure voluptas.
               </p>
 
             </div>
@@ -208,13 +193,13 @@
       </div>
 
       <!-- comment form -->
-      <div class="flex items-start p-6 text-base bg-white rounded-lg shadow-md mb-5">
+      <div class="card flex items-start">
         <div class="flex-shrink-0 mr-4">
           <img src="/user1.jpg" alt="user" class="w-10 h-10 rounded-full">
         </div>
-        <form class="flex w-full">
+        <form class="flex flex-wrap flex-col lg:flex-row w-full space-y-4 lg:space-y-0">
           <textarea
-            class="flex-1 border border-gray-300 px-4 py-2 h-24 min-h-20 resize-none mr-4 rounded-lg focus:outline-none"
+            class="flex-1 border border-gray-300 px-4 py-2 h-24 min-h-20 resize-none lg:mr-4 rounded-lg focus:outline-none"
             placeholder="Add a comment..."></textarea>
           <button type="submit"
             class="bg-primary text-white  px-4 py-2 h-12 w-24 rounded-lg uppercase font-semibold">Send</button>
