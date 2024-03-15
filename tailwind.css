@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply p-6 bg-white rounded-lg shadow-md mb-5
+}
+
+.card-img {
+  @apply rounded-full w-8 h-8 mr-3
+}
+
+.operatebtn {
+  @apply text-2xl font-bold text-gray-400 w-full hover:bg-gray-200
+}
+
+.operatebtn-digit {
+  @apply text-lg text-primary font-mono w-full text-center relative top-1
+}
+
+.row-flex {
+  @apply flex items-center
+}
